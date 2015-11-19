@@ -18,6 +18,9 @@
 
 -(id)initWithBrwView:(EBrowserView *) eInBrwView {
     if (self = [super initWithBrwView:eInBrwView]) {
+        
+        NSLog(@"appcan-->EUExQQ-->VerSion_3.0.10");
+        
     }
     return self;
 }
@@ -68,6 +71,7 @@
             _tencentOAuth = [[TencentOAuth alloc] initWithAppId:appid andDelegate:self];
         }
         [_tencentOAuth authorize:permissions];
+    
     }
 }
 
